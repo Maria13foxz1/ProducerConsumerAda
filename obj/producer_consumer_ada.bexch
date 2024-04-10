@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__producer_consumer_ada.o
+[PROJECT FILES]
+D:\Projects\producer_consumer_ada.gpr
+20240409183900 9766784b5d134a9035de70387c58a37f
+[BOUND OBJECT FILES]
+D:\Projects\obj\producer_consumer_ada.o
+[GENERATED SOURCE FILES]
+b__producer_consumer_ada.ads
+b__producer_consumer_ada.adb
+b__producer_consumer_ada.ali
+[RESULTING OPTIONS]
+-LD:\Projects\obj\
+-LD:\Projects\obj\
+-LD:/program/adacore/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+D:/program/adacore/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnarl.a
+D:/program/adacore/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads
