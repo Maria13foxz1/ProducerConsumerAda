@@ -1,9 +1,110 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project >
-    <file_marker current="true" column=" 1" line=" 1" >
-      <vfs_project>D:\Projects\producer_consumer_ada.gpr</vfs_project>
-      <vfs_file>D:\Projects\src\producer_consumer_ada.adb</vfs_file>
+  <Project>
+    <vfs_file>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 8" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 8" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 8" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 8" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 8" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 8" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 8" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 8" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 8" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 8" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 8" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 8" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 15" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 11" line=" 23" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 11" line=" 23" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 34" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 39" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 13" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 11" line=" 23" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 33" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 13" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 11" line=" 23" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 40" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 14" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 11" line=" 23" >
+      <vfs_project>D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr</vfs_project>
+      <vfs_file>D:\Projects\ProducerConsumerAda\src\producer_consumer_ada.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>

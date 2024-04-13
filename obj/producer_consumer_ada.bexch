@@ -1,17 +1,17 @@
 [GENERATED OBJECT FILE]
 b__producer_consumer_ada.o
 [PROJECT FILES]
-D:\Projects\producer_consumer_ada.gpr
-20240409183900 9766784b5d134a9035de70387c58a37f
+D:\Projects\ProducerConsumerAda\producer_consumer_ada.gpr
+20240409183900 02a6d26d05590c97295c157b8f8f7ff2
 [BOUND OBJECT FILES]
-D:\Projects\obj\producer_consumer_ada.o
+D:\Projects\ProducerConsumerAda\obj\producer_consumer_ada.o
 [GENERATED SOURCE FILES]
 b__producer_consumer_ada.ads
 b__producer_consumer_ada.adb
 b__producer_consumer_ada.ali
 [RESULTING OPTIONS]
--LD:\Projects\obj\
--LD:\Projects\obj\
+-LD:\Projects\ProducerConsumerAda\obj\
+-LD:\Projects\ProducerConsumerAda\obj\
 -LD:/program/adacore/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
 -static
 -static-libgcc

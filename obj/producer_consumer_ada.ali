@@ -8,18 +8,21 @@ P SS ZX
 RN
 RV NO_ACCESS_SUBPROGRAMS
 RV NO_ALLOCATORS
+RV NO_DELAY
 RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_DISPATCH
 RV NO_DISPATCHING_CALLS
 RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTION_PROPAGATION
 RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
 RV NO_IO
 RV NO_IMPLICIT_CONDITIONALS
 RV NO_LOCAL_ALLOCATORS
 RV NO_LOCAL_PROTECTED_OBJECTS
 RV NO_NESTED_FINALIZATION
 RV NO_RECURSION
+RV NO_RELATIVE_DELAY
 RV NO_SECONDARY_STACK
 RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
 RV NO_STANDARD_STORAGE_POOLS
@@ -33,12 +36,15 @@ RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_ATTRIBUTES
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_ALIASING
+RV NO_IMPLICIT_LOOPS
 RV STATIC_DISPATCH_TABLES
+RV MAX_TASK_ENTRIES=1
 RV MAX_TASKS=1+
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U producer_consumer_ada%b  producer_consumer_ada.adb  7d099bea NE OO SU
+U producer_consumer_ada%b  producer_consumer_ada.adb  884aded3 NE OO SU
 W ada%s			ada.ads			ada.ali
+Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
 W ada.containers.indefinite_doubly_linked_lists%s
@@ -73,9 +79,12 @@ Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
 Z system.tasking%s	s-taskin.adb		s-taskin.ali
 Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
 Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
 Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
+D a-calend.ads		20210520051128 474d9720 ada.calendar%s
+D a-caldel.ads		20210520051128 9f20b83d ada.calendar.delays%s
 D a-contai.ads		20210520051128 61e5e089 ada.containers%s
 D a-conhel.ads		20210520051128 20298884 ada.containers.helpers%s
 D a-conhel.adb		20210520051128 fe7a6827 ada.containers.helpers%b
@@ -100,7 +109,7 @@ D interfac.ads		20210520051132 edec285f interfaces%s
 D i-c.ads		20210520051132 d9beded9 interfaces.c%s
 D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D producer_consumer_ada.adb  20240409201432 8e4eb7de producer_consumer_ada%b
+D producer_consumer_ada.adb  20240413092012 7b0df2e7 producer_consumer_ada%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-addima.ads		20210520051132 a1ec9d3a system.address_image%s
 D s-atacco.ads		20210520051132 4c36d12f system.address_to_access_conversions%s
@@ -139,6 +148,7 @@ D s-taskin.ads		20210520051128 88fba9ad system.tasking%s
 D s-taprob.ads		20210520051128 acd6094d system.tasking.protected_objects%s
 D s-tpoben.ads		20210520051128 60ad3dae system.tasking.protected_objects.entries%s
 D s-tpobop.ads		20210520051128 5f548bb3 system.tasking.protected_objects.operations%s
+D s-tasren.ads		20210520051128 a67a9949 system.tasking.rendezvous%s
 D s-tassta.ads		20210520051128 cca55c94 system.tasking.stages%s
 D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
 D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
@@ -148,55 +158,70 @@ D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
 G c Z b b [producer_consumer_ada standard 7 11 none]
 X 1 ada.ads
-16K9*Ada 20e8 26|1r6 2r5 4r6 5r5
-X 2 a-contai.ads
-16K13*Containers 28e19 26|4r10 5r9
-X 5 a-cidlli.ads
-47k24*Indefinite_Doubly_Linked_Lists 413e50 26|4w21 9r32
-54R9 List<8|43R9> 26|16r13[9]
-154U14 Append 26|27s18[9]
-163U14 Delete_First 26|47s10[9]
-195V13 First_Element{string} 26|42s29[9]
-X 10 a-iteint.ads
+16K9*Ada 20e8 28|1r6 2r5 4r6 5r5
+X 4 a-contai.ads
+16K13*Containers 28e19 28|4r10 5r9
+X 7 a-cidlli.ads
+47k24*Indefinite_Doubly_Linked_Lists 413e50 28|4w21 8r32
+54R9 List<10|43R9> 28|12r17[8]
+154U14 Append 28|36s21[8]
+163U14 Delete_First 28|63s21[8]
+195V13 First_Element{string} 28|58s33[8]
+X 12 a-iteint.ads
 24h9 Forward_Iterator
-32h9 Reversible_Iterator<24R9[5|76]>
-X 17 a-textio.ads
-58K13*Text_IO 725e16 26|1w10 2r9
-506U14*Put_Line 26|28s10 44s13
-X 20 gnat.ads
-34K9*GNAT 57e9 26|1r19 2r18
-X 21 g-semaph.ads
-38K14*Semaphores 97e20 26|1w24 2r23
-40i4*Default_Ceiling{27|101I12} 26|12r41 13r41 14r40
-47W19*Counting_Semaphore 68e26 26|12r19 13r18 14r18
-58Y13 Seize 26|24s23 25s23 38s24 39s23
-63U17 Release 26|30s24 31s23 49s23 50s23
-X 26 producer_consumer_ada.adb
-7U11*Producer_Consumer_Ada 7b11 61l5 61t26
-9K12 String_Lists[5|47] 10r8
-12w4 Empty_Storage{21|47W19} 30r10 38r10
-13w4 Full_Storage{21|47W19} 24r10 49r10
-14w4 Free_Storage{21|47W19} 25r10 31r10 39r10 50r10
-16r4 Storage{5|54R9[9]} 27m10 27r10 42r43 47m23 47r23
-18T14 Producer 21b14 33l8 33t16 55r11
-19T14 Consumer 35b14 52l9 52t17 54r11 56r11
-23i11 I{integer} 27r35 28r42
-37i11 I{integer}
-42a13 Item{string} 44r40
-54t4 Cons1{19T14}
-55t4 Prod1{18T14}
-56t4 Cons2{19T14}
-X 27 system.ads
+32h9 Reversible_Iterator<24R9[7|76]>
+X 19 a-textio.ads
+58K13*Text_IO 725e16 28|1w10 2r9
+506U14*Put_Line 28|37s13 60s16
+X 22 gnat.ads
+34K9*GNAT 57e9 28|1r19 2r18
+X 23 g-semaph.ads
+38K14*Semaphores 97e20 28|1w24 2r23
+40i4*Default_Ceiling{29|101I12} 28|13r58 14r47 15r44
+47W19*Counting_Semaphore 68e26 28|13r24 14r24 15r21
+58Y13 Seize 28|33s26 34s26 54s27 55s26
+63U17 Release 28|39s26 40s27 65s26 66s26
+X 28 producer_consumer_ada.adb
+7U11*Producer_Consumer_Ada 7b11 93l5 93t26
+8K12 String_Lists[7|47] 9r8
+11U14 Starter 11b14 11>23 89l11 89t18 92s4
+11i23 Storage_Size{integer} 13r44
+12r7 Storage{7|54R9[8]} 36m13 36r13 58r48 63m13 63r13
+13w7 Full_Storega{23|47W19} 33r13 66r13
+14w7 Empty_Storega{23|47W19} 40r13 54r13
+15w7 Free_Storega{23|47W19} 34r13 39r13 55r13 65r13
+17T17 Consumer 19e10 46b17 50m15 71l11 71t19 76r47
+18Y16 Start 18>22 49b19 51l16 51t21 83s26
+18i22 Item_Numbers{integer} 50r40
+21T17 Producer 23e10 25b17 29m15 44l11 44t19 77r47
+22Y16 Start 22>22 28b19 30l16 30t21 87s26
+22i22 Item_Numbers{integer} 29r40
+26i12 Item_Numbers{integer} 29m24 32r24
+28i26 Item_Numbers{integer}
+32i14 i{integer} 36r39 37r40
+47i10 Item_Numbers{integer} 50m24 53r24
+49i26 Item_Numbers{integer}
+53i14 i{integer}
+58a16 item{string} 60r44
+73N7 Num_Consumers 76r29 78r39
+74N7 Num_Producers 77r29 79r39
+76a7 Consumers(17T17) 82r19 83r13
+77a7 Producers(21T17) 86r19 87r13
+78a7 Items_to_add_consumer(integer) 83r32
+79a7 Items_to_add_producer(integer) 87r32
+82i14 i{integer} 83r23 83r54
+86i14 i{integer} 87r23 87r54
+X 29 system.ads
 67M9*Address
 100I12*Any_Priority{integer}
 101I12*Priority{100I12}
-X 40 s-memory.ads
-53V13*Alloc{27|67M9} 103i<c,__gnat_malloc>22
+X 42 s-memory.ads
+53V13*Alloc{29|67M9} 103i<c,__gnat_malloc>22
 68U14*Free 104i<c,__gnat_free>22
-76V13*Realloc{27|67M9} 105i<c,__gnat_realloc>22
-X 48 s-stausa.ads
+76V13*Realloc{29|67M9} 105i<c,__gnat_realloc>22
+X 50 s-stausa.ads
 208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
 273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
-X 50 s-stalib.adb
+X 52 s-stalib.adb
 89U14 Break_Start 90i<c,__gnat_break_start>22
 
